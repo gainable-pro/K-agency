@@ -77,25 +77,37 @@
     "privacy": "Privacy Policy"
   },
   "Recrutement": {
+    "philo_title": "Recruitment excellence is based on people, reinforced by technology",
+    "philo_p1": "In a tense job market, the best candidates are rarely visible on traditional recruitment platforms.",
+    "philo_p2": "Our approach is based on a proven headhunting methodology, enriched by artificial intelligence tools to analyze markets, detect strategic profiles and accelerate searches.",
+    "philo_p3": "Technology improves our ability to identify. Human expertise remains at the heart of every decision.",
+    "approach_title": "Headhunting precision, increased by artificial intelligence",
+    "approach_subtitle": "We combine the expertise of our consultants, data analysis and artificial intelligence technologies to identify, attract and recruit the best talent in your market.",
+    "approach_1_title": "Strategic analysis of the need",
+    "approach_1_desc": "Each mission begins with an immersion in your environment in order to understand your challenges, your corporate culture, your organization and the objectives of the position. This phase allows us to precisely define the desired profile and the criteria for long-term success.",
+    "approach_2_title": "Market Mapping & Data Intelligence",
+    "approach_2_desc": "We carry out an in-depth analysis of your market in order to identify target companies, key skills and profiles with high potential. Our artificial intelligence tools allow us to quickly exploit large volumes of data and detect talent often missing from traditional recruitment channels.",
+    "approach_3_title": "Direct approach & Headhunting",
+    "approach_3_desc": "Our consultants contact the identified candidates directly as part of a confidential and personalized approach. Each contact is adapted to the profile, their background and their professional motivations.",
+    "approach_4_title": "Assessment & Qualification",
+    "approach_4_desc": "Beyond technical skills, we assess personality, development potential, leadership abilities and cultural fit with your company. Artificial intelligence assists our analyses, but the final evaluation always relies on the expertise of our consultants.",
+    "approach_5_title": "Presentation of talents",
+    "approach_5_desc": "We present to you a targeted selection of qualified candidates accompanied by a detailed summary, an in-depth evaluation and concrete recommendations. Our goal is not to present a large number of profiles, but the best profiles.",
+    "approach_6_title": "Support until integration",
+    "approach_6_desc": "We ensure regular follow-up with the candidate and the company in order to secure the position and promote lasting integration.",
+    "value_title": "Why businesses choose K-Agency",
+    "value_item_1": "Specialized headhunting",
+    "value_item_2": "Confidential approach",
+    "value_item_3": "AI-augmented methodology",
+    "value_item_4": "Identification of passive candidates",
+    "value_item_5": "Reduction in recruitment times",
+    "value_item_6": "In-depth profile assessment",
+    "value_item_7": "Support until integration",
+    "value_item_8": "National and international network",
+    "conclusion": "Artificial intelligence helps us identify the best talent. The expertise of our consultants allows us to recruit the right people.",
     "tag": "Human Capital First",
     "title": "Talents to shape tomorrow",
-    "intro": "At K-Agency, we don't just recruit CVs, we recruit personalities, ambitions, and stories. Our mission is to create sustainable and fulfilling professional encounters, based on trust and transparency.",
-    "philo_title": "The Human at the Center of Our Approach",
-    "philo_p1": "In a constantly changing professional world, the true added value of a company lies in its employees. We deeply believe that the success of a recruitment is not measured solely by technical fit, but above all by cultural and human fit.",
-    "philo_p2": "Our consultants, experts in their respective sectors, take the time to understand the DNA of your company: your values, your vision, and the work environment you offer.",
-    "philo_p3": "On the candidate side, we act as true career coaches. We listen to their aspirations, evaluate their soft skills with care, and orient them towards opportunities where they can thrive and give their best.",
-    "philo_v1_title": "Empathy",
-    "philo_v1_desc": "Understand before proposing.",
-    "philo_v2_title": "Transparency",
-    "philo_v2_desc": "Clear and honest communication.",
-    "approach_title": "Our Approach",
-    "approach_subtitle": "A proven method that combines analytical rigor and emotional intelligence.",
-    "approach_1_title": "Needs Analysis",
-    "approach_1_desc": "Immersion in your offices, interviews with operational managers to capture the essence of the need. We co-write the ideal profile integrating your strategic challenges.",
-    "approach_2_title": "Targeted Sourcing",
-    "approach_2_desc": "Targeted hunting, activation of our exclusive pool, and multi-channel dissemination. We contact potential candidates with personalized and encouraging messages.",
-    "approach_3_title": "Rigorous Evaluation",
-    "approach_3_desc": "Beyond technical skills, we assess personality, leadership potential, and adaptability through in-depth interviews and recognized psychometric tests."
+    "intro": "At K-Agency, we don't just recruit CVs, we recruit personalities, ambitions, and stories. Our mission is to create sustainable and fulfilling professional encounters, based on trust and transparency."
   },
   "ChasseDeTetes": {
     "tag": "Exclusive Service",
@@ -216,32 +228,62 @@
       "casablanca": {
         "subtitle": "The Economic Capital",
         "desc": "The beating heart of the Moroccan economy, Casablanca hosts the headquarters of multinationals. We recruit high-level profiles to drive continental growth.",
-        "sectors": ["Banking & Finance", "IT & Digital", "Insurance", "C-Level Executive"]
+        "sectors": [
+          "Banking & Finance",
+          "IT & Digital",
+          "Insurance",
+          "C-Level Executive"
+        ]
       },
       "tanger": {
         "subtitle": "The Industrial & Logistics Hub",
         "desc": "Gateway to Europe and global logistics hub with Tangier Med. Our expertise covers the entire industrial value chain, from engineering to plant management.",
-        "sectors": ["Logistics (Tangier Med)", "Automotive Industry", "Aeronautics", "Import-Export"]
+        "sectors": [
+          "Logistics (Tangier Med)",
+          "Automotive Industry",
+          "Aeronautics",
+          "Import-Export"
+        ]
       },
       "marrakech": {
         "subtitle": "Service Excellence",
         "desc": "Capital of luxury tourism and international events. We support palaces and major service actors in acquiring exceptional talents.",
-        "sectors": ["Luxury Hospitality", "Events", "Premium Real Estate", "Tourism"]
+        "sectors": [
+          "Luxury Hospitality",
+          "Events",
+          "Premium Real Estate",
+          "Tourism"
+        ]
       },
       "fes-meknes": {
         "subtitle": "Agro-industry & Offshoring",
         "desc": "Historical region undergoing major agricultural and technological transition. A vast talent pool for agribusiness and shared service centers.",
-        "sectors": ["Agro-industry", "Offshoring", "Textiles", "Cultural Tourism"]
+        "sectors": [
+          "Agro-industry",
+          "Offshoring",
+          "Textiles",
+          "Cultural Tourism"
+        ]
       },
       "rabat": {
         "subtitle": "Technologies & Institutions",
         "desc": "Administrative capital and new technological center of excellence (Technopolis). We recruit for institutions, NGOs, and the tech sector.",
-        "sectors": ["Public Sector & NGOs", "Health & Pharma", "Education", "IT Engineering"]
+        "sectors": [
+          "Public Sector & NGOs",
+          "Health & Pharma",
+          "Education",
+          "IT Engineering"
+        ]
       },
       "agadir": {
         "subtitle": "Seaside & Fishery Hub",
         "desc": "The pearl of the Moroccan south is experiencing a major economic boom. Between seaside tourism, modern agriculture, and the fishing industry, our experts identify the best talents to support this regional dynamic.",
-        "sectors": ["Tourism & Hospitality", "Fishery Industry", "Modern Agriculture", "Renewable Energies"]
+        "sectors": [
+          "Tourism & Hospitality",
+          "Fishery Industry",
+          "Modern Agriculture",
+          "Renewable Energies"
+        ]
       }
     }
   },

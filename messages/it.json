@@ -77,25 +77,37 @@
     "privacy": "Informativa sulla Privacy"
   },
   "Recrutement": {
+    "philo_title": "L’eccellenza nel reclutamento si basa sulle persone, rafforzate dalla tecnologia",
+    "philo_p1": "In un mercato del lavoro teso, i migliori candidati sono raramente visibili sulle tradizionali piattaforme di reclutamento.",
+    "philo_p2": "Il nostro approccio si basa su una comprovata metodologia di headhunting, arricchita da strumenti di intelligenza artificiale per analizzare i mercati, individuare profili strategici e accelerare le ricerche.",
+    "philo_p3": "La tecnologia migliora la nostra capacità di identificazione. La competenza umana rimane al centro di ogni decisione.",
+    "approach_title": "Precisione nella caccia alle teste, aumentata dall'intelligenza artificiale",
+    "approach_subtitle": "Uniamo l'esperienza dei nostri consulenti, l'analisi dei dati e le tecnologie di intelligenza artificiale per identificare, attrarre e reclutare i migliori talenti nel tuo mercato.",
+    "approach_1_title": "Analisi strategica del bisogno",
+    "approach_1_desc": "Ogni missione inizia con un'immersione nel tuo ambiente per comprendere le tue sfide, la tua cultura aziendale, la tua organizzazione e gli obiettivi della posizione. Questa fase ci permette di definire con precisione il profilo desiderato e i criteri per il successo a lungo termine.",
+    "approach_2_title": "Mappatura del mercato e intelligence dei dati",
+    "approach_2_desc": "Effettuiamo un'analisi approfondita del tuo mercato per identificare aziende target, competenze chiave e profili ad alto potenziale. I nostri strumenti di intelligenza artificiale ci consentono di sfruttare rapidamente grandi volumi di dati e di individuare talenti spesso mancanti nei tradizionali canali di reclutamento.",
+    "approach_3_title": "Approccio diretto e headhunting",
+    "approach_3_desc": "I nostri consulenti contattano direttamente i candidati individuati nell'ambito di un approccio confidenziale e personalizzato. Ogni contatto è adattato al profilo, al suo background e alle sue motivazioni professionali.",
+    "approach_4_title": "Valutazione e qualificazione",
+    "approach_4_desc": "Oltre alle competenze tecniche, valutiamo personalità, potenziale di sviluppo, capacità di leadership e aderenza culturale con la tua azienda. L’intelligenza artificiale assiste le nostre analisi, ma la valutazione finale si affida sempre alla competenza dei nostri consulenti.",
+    "approach_5_title": "Presentazione dei talenti",
+    "approach_5_desc": "Ti presentiamo una selezione mirata di candidati qualificati accompagnata da un riepilogo dettagliato, una valutazione approfondita e raccomandazioni concrete. Il nostro obiettivo non è presentare un gran numero di profili, ma i migliori profili.",
+    "approach_6_title": "Supporto fino all'integrazione",
+    "approach_6_desc": "Assicuriamo un follow-up regolare con il candidato e con l'azienda al fine di garantire la posizione e promuovere un'integrazione duratura.",
+    "value_title": "Perché le aziende scelgono K-Agency",
+    "value_item_1": "Caccia alle teste specializzata",
+    "value_item_2": "Approccio riservato",
+    "value_item_3": "Metodologia potenziata dall'intelligenza artificiale",
+    "value_item_4": "Identificazione dei candidati passivi",
+    "value_item_5": "Riduzione dei tempi di reclutamento",
+    "value_item_6": "Valutazione approfondita del profilo",
+    "value_item_7": "Supporto fino all'integrazione",
+    "value_item_8": "Rete nazionale e internazionale",
+    "conclusion": "L’intelligenza artificiale ci aiuta a identificare i migliori talenti. La competenza dei nostri consulenti ci permette di reclutare le persone giuste.",
     "tag": "Il Capitale Umano Prima di Tutto",
     "title": "Talenti per plasmare il domani",
-    "intro": "In K-Agency non selezioniamo solo CV, reclutiamo personalità, ambizioni e storie. La nostra missione è creare incontri professionali duraturi e soddisfacenti, basati sulla fiducia e sulla trasparenza.",
-    "philo_title": "L'Umano al Centro del Nostro Approccio",
-    "philo_p1": "In un mondo professionale in costante cambiamento, il vero valore aggiunto di un'azienda risiede nei suoi dipendenti. Crediamo profondamente che il successo di un reclutamento non si misuri solo dall'idoneità tecnica, ma soprattutto da quella culturale e umana.",
-    "philo_p2": "I nostri consulenti, esperti nei rispettivi settori, si prendono il tempo necessario per comprendere il DNA della vostra azienda: i vostri valori, la vostra visione e l'ambiente di lavoro che offrite.",
-    "philo_p3": "Dalla parte dei candidati, agiamo come veri e propri career coach. Ascoltiamo le loro aspirazioni, valutiamo con attenzione le loro soft skills e li indirizziamo verso opportunità in cui possano prosperare e dare il meglio di sé.",
-    "philo_v1_title": "Empatia",
-    "philo_v1_desc": "Comprendere prima di proporre.",
-    "philo_v2_title": "Trasparenza",
-    "philo_v2_desc": "Comunicazione chiara e onesta.",
-    "approach_title": "Notre Approche",
-    "approach_subtitle": "Un metodo collaudato che unisce rigore analitico e intelligenza emotiva.",
-    "approach_1_title": "Analisi dei bisogni",
-    "approach_1_desc": "Immersione nei vostri uffici, interviste con i manager operativi per cogliere l'essenza del bisogno. Co-redigiamo il profilo ideale integrando le vostre sfide strategiche.",
-    "approach_2_title": "Sourcing mirato",
-    "approach_2_desc": "Caccia mirata, attivazione del nostro bacino esclusivo e diffusione multicanale. Contattiamo i potenziali candidati con messaggi personalizzati e incoraggianti.",
-    "approach_3_title": "Valutazione rigorosa",
-    "approach_3_desc": "Oltre alle competenze tecniche, valutiamo la personalità, il potenziale di leadership e l'adattabilità attraverso interviste approfondite e test psicometrici riconosciuti."
+    "intro": "In K-Agency non selezioniamo solo CV, reclutiamo personalità, ambizioni e storie. La nostra missione è creare incontri professionali duraturi e soddisfacenti, basati sulla fiducia e sulla trasparenza."
   },
   "ChasseDeTetes": {
     "tag": "Servizio Esclusivo",
@@ -216,32 +228,62 @@
       "casablanca": {
         "subtitle": "La Capitale Economica",
         "desc": "Il cuore pulsante dell'economia marocchina, Casablanca ospita le sedi di multinazionali. Reclutiamo profili di alto livello per guidare la crescita continentale.",
-        "sectors": ["Banca & Finanza", "IT & Digitale", "Assicurazione", "C-Level Executive"]
+        "sectors": [
+          "Banca & Finanza",
+          "IT & Digitale",
+          "Assicurazione",
+          "C-Level Executive"
+        ]
       },
       "tanger": {
         "subtitle": "L'Hub Industriale & Logistico",
         "desc": "Porta dell'Europa e hub logistico globale con Tangeri Med. La nostra esperienza copre l'intera catena del valore industriale, dall'ingegneria alla gestione degli impianti.",
-        "sectors": ["Logistica (Tanger Med)", "Industria Automobilistica", "Aeronautica", "Import-Export"]
+        "sectors": [
+          "Logistica (Tanger Med)",
+          "Industria Automobilistica",
+          "Aeronautica",
+          "Import-Export"
+        ]
       },
       "marrakech": {
         "subtitle": "Eccellenza del Servizio",
         "desc": "Capitale del turismo di lusso e degli eventi internazionali. Supportiamo i palazzi e i principali attori dei servizi nell'acquisizione di talenti eccezionali.",
-        "sectors": ["Ospitalità di Lusso", "Eventi", "Immobiliare Premium", "Turismo"]
+        "sectors": [
+          "Ospitalità di Lusso",
+          "Eventi",
+          "Immobiliare Premium",
+          "Turismo"
+        ]
       },
       "fes-meknes": {
         "subtitle": "Agroalimentare & Offshoring",
         "desc": "Regione storica in profonda transizione agricola e tecnologica. Un enorme bacino di talenti per l'agroalimentare e i centri di servizi condivisi.",
-        "sectors": ["Agroindustria", "Offshoring", "Tessile", "Turismo Culturale"]
+        "sectors": [
+          "Agroindustria",
+          "Offshoring",
+          "Tessile",
+          "Turismo Culturale"
+        ]
       },
       "rabat": {
         "subtitle": "Tecnologie & Istituzioni",
         "desc": "Capitale amministrativa e nuovo centro tecnologico d'eccellenza (Technopolis). Reclutiamo per istituzioni, ONG e settore tecnologico.",
-        "sectors": ["Settore Pubblico & ONG", "Salute & Pharma", "Educazione", "Ingegneria IT"]
+        "sectors": [
+          "Settore Pubblico & ONG",
+          "Salute & Pharma",
+          "Educazione",
+          "Ingegneria IT"
+        ]
       },
       "agadir": {
         "subtitle": "Polo Balneare & Ittico",
         "desc": "La perla del sud marocchino sta vivendo un grande boom economico. Tra turismo balneare, agricoltura moderna e industria ittica, i nostri esperti identificano i migliori talenti per supportare questa dinamica regionale.",
-        "sectors": ["Turismo & Ospitalità", "Industria Ittica", "Agricoltura Moderna", "Energie Rinnovabili"]
+        "sectors": [
+          "Turismo & Ospitalità",
+          "Industria Ittica",
+          "Agricoltura Moderna",
+          "Energie Rinnovabili"
+        ]
       }
     }
   },
