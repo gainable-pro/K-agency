@@ -1,0 +1,112 @@
+{
+  "Index": {
+    "title": "K-Agency",
+    "description": "Premium Recruitment Agency"
+  },
+  "Header": {
+    "recruitment": "Recruitment",
+    "executive_search": "Executive Search",
+    "jobs": "Job Offers",
+    "contact": "Contact",
+    "drop_cv": "Submit my CV",
+    "implantations": "Locations",
+    "expertises": "Expertises"
+  },
+  "Recrutement": {
+    "title": "Tailor-Made Recruitment Solutions",
+    "subtitle": "Sectoral expertise and behavioral assessment",
+    "intro": "At K-Agency, we understand that every recruitment is a strategic investment. We support our partners in identifying, evaluating, and integrating key talents who will make a difference.",
+    "approach_title": "Our Approach",
+    "approach_1_title": "Needs Analysis",
+    "approach_1_desc": "In-depth understanding of your corporate culture and the role's challenges.",
+    "approach_2_title": "Targeted Sourcing",
+    "approach_2_desc": "Activation of our talent pool and direct approach of the best profiles.",
+    "approach_3_title": "Rigorous Assessment",
+    "approach_3_desc": "Structured interviews, reference checks, and psychometric testing.",
+    "sectors_title": "Sectors of Excellence",
+    "sectors_finance": "Banking & Finance",
+    "sectors_tech": "IT & Digital",
+    "sectors_industry": "Industry & Engineering",
+    "sectors_supply": "Supply Chain & Logistics"
+  },
+  "ChasseDeTetes": {
+    "title": "Executive Search",
+    "subtitle": "Tracking down executives and rare profiles",
+    "intro": "Executive Search is our core business. We identify highly qualified executives and experts who are not actively seeking opportunities, in Morocco and internationally, in the strictest confidentiality.",
+    "methodology_title": "Our Confidential Methodology",
+    "meth_1": "Comprehensive talent mapping of the market.",
+    "meth_2": "Direct, subtle, and personalized approach.",
+    "meth_3": "Absolute confidentiality for both client and candidate.",
+    "meth_4": "Support during complex salary negotiations."
+  },
+  "DeposerCV": {
+    "title": "Submit a Spontaneous Application",
+    "subtitle": "Join our exclusive talent pool",
+    "intro": "Are you open to new opportunities? Submit your profile. Our consultants will analyze your background with the utmost discretion and contact you if an opportunity matches your ambitions.",
+    "form_fname": "First Name",
+    "form_lname": "Last Name",
+    "form_email": "Professional Email",
+    "form_phone": "Phone",
+    "form_linkedin": "LinkedIn URL",
+    "form_cv": "Upload your CV (PDF)",
+    "form_message": "Your expectations (Mobility, Salary, Sector...)",
+    "form_submit": "Submit my application"
+  },
+  "Blog": {
+    "header_tag": "Editorial Space",
+    "title1": "Insights &",
+    "title2": "HR Resources",
+    "subtitle": "Job market trends, sectoral analyses, and exclusive advice for executives and HR professionals.",
+    "featured_tag": "Featured Article",
+    "latest_title": "Latest Articles",
+    "read_more": "Read more",
+    "podcast_tag": "Official Podcast",
+    "podcast_title1": "K-Executive:",
+    "podcast_title2": "The sound of leadership",
+    "podcast_desc": "Every month, we invite an inspiring executive (Morocco or Africa) to decipher their journey, their vision of management, and the challenges of their sector.",
+    "btn_listen": "Listen to the latest episode",
+    "btn_spotify": "View on Spotify"
+  },
+  "Implantations": {
+    "header_tag": "Our Intervention Zones",
+    "title1": "Recruitment expertise",
+    "title2": "adapted to each region.",
+    "subtitle": "The job market in Morocco is diverse. The challenges of Casablanca are not those of Tangier or Marrakech. At K-Agency, we master the socio-economic ecosystem of each city to offer you the most relevant talents.",
+    "sectors_title": "Sectors of excellence",
+    "cta_title": "A recruitment planned in the region?",
+    "cta_desc": "Whether it's for the opening of a new industrial site in Tangier Med or the recruitment of hotel management in Marrakech, our local teams are ready to support you.",
+    "cta_button": "Contact our experts"
+  },
+  "ExpertisesIndex": {
+    "header_tag": "Our Areas of Intervention",
+    "title": "Expertises Index",
+    "subtitle": "Find here all our areas of expertise by city, sector, and profession. Our deep knowledge of local ecosystems allows us to support you throughout the Moroccan territory.",
+    "recruitment_at": "Recruitment in",
+    "other_specialties": "+ other specialties"
+  },
+  "SeoEngine": {
+    "header_tag": "Sectoral & Local Expertise",
+    "hero_recruitment": "Recruitment of",
+    "hero_in_sector": "in the sector of",
+    "hero_at": "in",
+    "hero_desc": "To support local dynamics, attracting the best C-Levels is crucial. But how can you be sure of their real competence?",
+    "hero_btn": "Start a search",
+    "problem_title1": "Recruitment in the era of Artificial Intelligence:",
+    "problem_title2": "An illusion of perfection",
+    "problem_p1": "Today, recruiting this profile has become a real challenge. Why? Because generative Artificial Intelligence has disrupted the rules of applications.",
+    "problem_alert_title": "The Disadvantage of classic digital processes",
+    "problem_alert_desc": "Perfect CVs generated in 5 seconds, cover letters polished by ChatGPT, and even AI assistants capable of passing online cognitive tests instead of the candidate. The \"perfect on paper\" profiles have become indistinguishable from true leaders.",
+    "problem_p2": "You cannot entrust the future of your company to a keyword matching algorithm.",
+    "solution_title1": "The K-Agency Advantage:",
+    "solution_title2": "The return to \"Real Human\"",
+    "sol1_title": "Emotional Intelligence",
+    "sol1_desc": "Our assessment is not based on a CV, but on an in-depth meeting. We test leadership, stress management, and cultural \"fit\".",
+    "sol2_title": "Real-life situations",
+    "sol2_desc": "AI cannot simulate field experience. We challenge candidates on complex Business Cases related to the market.",
+    "sol3_title": "Back-channeling (Reference checking)",
+    "sol3_desc": "An in-depth reputation check with former N+1 and N-1, impossible for a candidate to falsify.",
+    "cta_title": "Entrust us with the search for your expert in",
+    "cta_desc": "We have the network and the methodology to approach the most performing passive profiles in the field:",
+    "cta_btn": "Discuss your needs"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "Index": {
+    "title": "K-Agency",
+    "description": "Cabinet de recrutement premium"
+  },
+  "Header": {
+    "recruitment": "Recrutement",
+    "executive_search": "Chasse de têtes",
+    "jobs": "Offres d'emploi",
+    "contact": "Contact",
+    "drop_cv": "Déposer mon CV",
+    "implantations": "Implantations",
+    "expertises": "Expertises"
+  },
+  "Recrutement": {
+    "title": "Solutions de Recrutement Sur-Mesure",
+    "subtitle": "Expertise sectorielle et évaluation comportementale",
+    "intro": "Chez K-Agency, nous comprenons que chaque recrutement est un investissement stratégique. Nous accompagnons nos partenaires dans l'identification, l'évaluation et l'intégration de talents clés qui feront la différence.",
+    "approach_title": "Notre Approche",
+    "approach_1_title": "Analyse du besoin",
+    "approach_1_desc": "Compréhension approfondie de votre culture d'entreprise et des enjeux du poste.",
+    "approach_2_title": "Sourcing ciblé",
+    "approach_2_desc": "Activation de notre vivier de candidats et approche directe des meilleurs profils.",
+    "approach_3_title": "Évaluation rigoureuse",
+    "approach_3_desc": "Entretiens structurés, prises de références et tests psychométriques.",
+    "sectors_title": "Secteurs d'Excellence",
+    "sectors_finance": "Banque & Finance",
+    "sectors_tech": "IT & Digital",
+    "sectors_industry": "Industrie & Ingénierie",
+    "sectors_supply": "Supply Chain & Logistique"
+  },
+  "ChasseDeTetes": {
+    "title": "Executive Search",
+    "subtitle": "La traque des dirigeants et profils rares",
+    "intro": "L'Executive Search est notre cœur de métier. Nous identifions dans la plus stricte confidentialité les cadres dirigeants et experts hautement qualifiés qui ne sont pas en recherche active, au Maroc et à l'international.",
+    "methodology_title": "Notre Méthodologie Confidentielle",
+    "meth_1": "Cartographie complète du marché (Talent Mapping).",
+    "meth_2": "Approche directe, subtile et personnalisée.",
+    "meth_3": "Confidentialité absolue pour le client et le candidat.",
+    "meth_4": "Accompagnement dans les négociations salariales complexes."
+  },
+  "DeposerCV": {
+    "title": "Déposer une Candidature Spontanée",
+    "subtitle": "Rejoignez notre vivier de talents exclusif",
+    "intro": "Vous êtes à l'écoute du marché ? Soumettez votre profil. Nos consultants analysent votre parcours avec la plus grande discrétion et vous recontactent si une opportunité correspond à vos ambitions.",
+    "form_fname": "Prénom",
+    "form_lname": "Nom",
+    "form_email": "Email professionnel",
+    "form_phone": "Téléphone",
+    "form_linkedin": "Lien LinkedIn",
+    "form_cv": "Télécharger votre CV (PDF)",
+    "form_message": "Vos attentes (Mobilité, Salaire, Secteur...)",
+    "form_submit": "Envoyer ma candidature"
+  },
+  "Blog": {
+    "header_tag": "Espace Éditorial",
+    "title1": "Insights &",
+    "title2": "Ressources RH",
+    "subtitle": "Tendances du marché de l'emploi, analyses sectorielles et conseils exclusifs pour les dirigeants et professionnels RH.",
+    "featured_tag": "Article à la Une",
+    "latest_title": "Derniers Articles",
+    "read_more": "Lire la suite",
+    "podcast_tag": "Podcast Officiel",
+    "podcast_title1": "K-Executive :",
+    "podcast_title2": "Le son du leadership",
+    "podcast_desc": "Chaque mois, nous invitons un dirigeant inspirant (Maroc ou Afrique) pour décrypter son parcours, sa vision du management et les défis de son secteur.",
+    "btn_listen": "Écouter le dernier épisode",
+    "btn_spotify": "Voir sur Spotify"
+  },
+  "Implantations": {
+    "header_tag": "Nos Zones d'Intervention",
+    "title1": "Une expertise de recrutement",
+    "title2": "adaptée à chaque région.",
+    "subtitle": "Le marché de l'emploi au Maroc est pluriel. Les enjeux de Casablanca ne sont pas ceux de Tanger ou de Marrakech. Chez K-Agency, nous maîtrisons l'écosystème socio-économique de chaque ville pour vous proposer les talents les plus pertinents.",
+    "sectors_title": "Secteurs d'excellence",
+    "cta_title": "Un recrutement prévu en région ?",
+    "cta_desc": "Que ce soit pour l'ouverture d'un nouveau site industriel à Tanger Med ou le recrutement d'une direction hôtelière à Marrakech, nos équipes locales sont prêtes à vous accompagner.",
+    "cta_button": "Contactez nos experts"
+  },
+  "ExpertisesIndex": {
+    "header_tag": "Nos Domaines d'Intervention",
+    "title": "Index des Expertises",
+    "subtitle": "Retrouvez ici l'ensemble de nos domaines d'expertise par ville, secteur et métier. Notre connaissance pointue des écosystèmes locaux nous permet de vous accompagner sur l'ensemble du territoire marocain.",
+    "recruitment_at": "Recrutement à",
+    "other_specialties": "+ autres spécialités"
+  },
+  "SeoEngine": {
+    "header_tag": "Expertise Sectorielle & Locale",
+    "hero_recruitment": "Recrutement de",
+    "hero_in_sector": "dans le secteur",
+    "hero_at": "à",
+    "hero_desc": "Pour soutenir la dynamique locale, attirer les meilleurs C-Levels est crucial. Mais comment s'assurer de leur réelle compétence ?",
+    "hero_btn": "Démarrer une recherche",
+    "problem_title1": "Le recrutement à l'ère de l'Intelligence Artificielle :",
+    "problem_title2": "Une illusion de perfection",
+    "problem_p1": "Aujourd'hui, recruter ce profil est devenu un véritable défi. Pourquoi ? Parce que l'Intelligence Artificielle générative a bouleversé les codes de la candidature.",
+    "problem_alert_title": "L'Inconvénient des processus digitaux classiques",
+    "problem_alert_desc": "Des CVs parfaits générés en 5 secondes, des lettres de motivation lissées par ChatGPT, et même des assistants IA capables de réussir des tests cognitifs en ligne à la place du candidat. Les profils parfaits sur le papier sont devenus indétectables des véritables leaders.",
+    "problem_p2": "Vous ne pouvez pas confier l'avenir de votre entreprise à un algorithme de matching de mots-clés.",
+    "solution_title1": "L'Avantage K-Agency :",
+    "solution_title2": "Le retour au \"Real Human\"",
+    "sol1_title": "Intelligence Émotionnelle",
+    "sol1_desc": "Notre évaluation ne se base pas sur un CV, mais sur une rencontre en profondeur. Nous testons le leadership, la gestion du stress et le \"fit\" culturel.",
+    "sol2_title": "Mises en situation réelles",
+    "sol2_desc": "L'IA ne peut pas simuler l'expérience terrain. Nous challengons les candidats sur des Business Cases complexes liés au marché.",
+    "sol3_title": "Back-channeling (Prise de références)",
+    "sol3_desc": "Une enquête de réputation approfondie auprès d'anciens N+1 et N-1, impossible à falsifier par un candidat.",
+    "cta_title": "Confiez-nous la recherche de votre expert à",
+    "cta_desc": "Nous avons le réseau et la méthodologie pour approcher les profils passifs les plus performants dans le domaine :",
+    "cta_btn": "Discuter de votre besoin"
+  }
+}
