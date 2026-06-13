@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import { Calendar, Clock, ChevronRight, Search } from 'lucide-react';
 import Image from 'next/image';
+import { Link } from '@/i18n/routing';
 
 interface Article {
   id: number;
@@ -111,8 +112,9 @@ export default function ArticlesGrid({
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedArticles.map((article) => (
-            <div
+            <Link
               key={article.id}
+              href={`/blog/${article.id}`}
               className="bg-card/40 backdrop-blur-sm border border-border/50 rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-500 group cursor-pointer shadow-xl shadow-black/10 flex flex-col hover:-translate-y-1"
             >
               {/* Image */}
@@ -149,7 +151,7 @@ export default function ArticlesGrid({
                   </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       )}

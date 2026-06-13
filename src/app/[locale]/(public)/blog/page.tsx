@@ -1,6 +1,7 @@
 import { Calendar, Clock, Headphones, PlayCircle, BookOpen } from 'lucide-react';
 import Image from 'next/image';
 import { getLocale, getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/routing';
 import ArticlesGrid from '@/components/blog/ArticlesGrid';
 import articlesData from '@/data/articles.json';
 
@@ -56,7 +57,7 @@ export default async function BlogPage() {
       {/* Featured Article */}
       {featuredArticle && (
         <div className="container mx-auto px-6 max-w-7xl mb-24">
-          <div className="relative rounded-2xl overflow-hidden group cursor-pointer border border-border/50">
+          <Link href={`/blog/${featuredArticle.id}`} className="relative block rounded-2xl overflow-hidden group cursor-pointer border border-border/50">
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10" />
             <div className="relative h-[500px] w-full">
               <Image 
@@ -85,7 +86,7 @@ export default async function BlogPage() {
                 <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> {featuredArticle.readTime}</span>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       )}
 
