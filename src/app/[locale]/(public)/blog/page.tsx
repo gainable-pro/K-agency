@@ -30,6 +30,78 @@ const ARTICLES = [
     readTime: "7 min",
     image: "/images/executive_interview_marrakech.png",
     excerptKey: "art_3_excerpt"
+  },
+  {
+    id: 4,
+    titleKey: "art_4_title",
+    categoryKey: "art_4_cat",
+    date: "22 Mai 2026",
+    readTime: "6 min",
+    image: "/images/business_card_exchange.png",
+    excerptKey: "art_4_excerpt"
+  },
+  {
+    id: 5,
+    titleKey: "art_5_title",
+    categoryKey: "art_5_cat",
+    date: "15 Mai 2026",
+    readTime: "8 min",
+    image: "/images/team_collaboration.png",
+    excerptKey: "art_5_excerpt"
+  },
+  {
+    id: 6,
+    titleKey: "art_6_title",
+    categoryKey: "art_6_cat",
+    date: "10 Mai 2026",
+    readTime: "5 min",
+    image: "/images/cfc.png",
+    excerptKey: "art_6_excerpt"
+  },
+  {
+    id: 7,
+    titleKey: "art_7_title",
+    categoryKey: "art_7_cat",
+    date: "05 Mai 2026",
+    readTime: "6 min",
+    image: "/images/marrakech.png",
+    excerptKey: "art_7_excerpt"
+  },
+  {
+    id: 8,
+    titleKey: "art_8_title",
+    categoryKey: "art_8_cat",
+    date: "28 Avril 2026",
+    readTime: "7 min",
+    image: "/images/business.png",
+    excerptKey: "art_8_excerpt"
+  },
+  {
+    id: 9,
+    titleKey: "art_9_title",
+    categoryKey: "art_9_cat",
+    date: "22 Avril 2026",
+    readTime: "7 min",
+    image: "/images/casaport.png",
+    excerptKey: "art_9_excerpt"
+  },
+  {
+    id: 10,
+    titleKey: "art_10_title",
+    categoryKey: "art_10_cat",
+    date: "15 Avril 2026",
+    readTime: "6 min",
+    image: "/images/developer.png",
+    excerptKey: "art_10_excerpt"
+  },
+  {
+    id: 11,
+    titleKey: "art_11_title",
+    categoryKey: "art_11_cat",
+    date: "08 Avril 2026",
+    readTime: "5 min",
+    image: "/images/logistics.png",
+    excerptKey: "art_11_excerpt"
   }
 ];
 
