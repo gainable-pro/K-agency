@@ -144,3 +144,9 @@
     @apply font-sans;
   }
 }
+
+.mobile-nav-drawer {
+  background-color: #121214 !important; /* Premium dark grey layer */
+  backdrop-filter: blur(16px) !important;
+  z-index: 99999 !important;
+}

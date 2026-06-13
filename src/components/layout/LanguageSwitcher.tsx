@@ -30,10 +30,10 @@ export default function LanguageSwitcher() {
       <button 
         onClick={() => setIsOpen(!isOpen)}
         disabled={isPending}
-        className="flex items-center space-x-1 text-[13px] font-medium text-foreground/70 hover:text-primary transition-colors"
+        className="flex items-center space-x-1 text-foreground/70 hover:text-primary transition-colors p-2"
       >
-        <Globe className="w-4 h-4 mr-1" />
-        <span>{locale.toUpperCase()}</span>
+        <Globe className="w-5 h-5" />
+        <span className="hidden sm:inline text-[13px] font-medium ml-1">{locale.toUpperCase()}</span>
       </button>
 
       {isOpen && (
