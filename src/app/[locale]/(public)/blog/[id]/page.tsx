@@ -114,9 +114,15 @@ export default async function ArticleDetailPage({ params }: Props) {
           <p className="text-foreground text-xl leading-relaxed font-light border-l-2 border-primary pl-6 py-2">
             {localized.excerpt}
           </p>
-          <p>
-            {paragraphs.body}
-          </p>
+          {localized.content && localized.content.length > 0 ? (
+            localized.content.map((p: string, idx: number) => (
+              <p key={idx} className="mb-6 leading-relaxed">
+                {p}
+              </p>
+            ))
+          ) : (
+            <p>{paragraphs.body}</p>
+          )}
         </div>
 
         {/* Call to Action Card */}
