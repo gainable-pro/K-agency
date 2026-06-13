@@ -35,8 +35,8 @@ export default function Footer() {
             <ul className="space-y-4 text-sm font-light text-muted-foreground">
               <li><Link href="/offres-emploi" className="hover:text-primary transition-colors">{t('candidate_1')}</Link></li>
               <li><Link href="/deposer-cv" className="hover:text-primary transition-colors">{t('candidate_2')}</Link></li>
-              <li><Link href="/chasse-de-tetes" className="hover:text-primary transition-colors">{t('candidate_3')}</Link></li>
               <li><Link href="/blog" className="hover:text-primary transition-colors">{t('candidate_4')}</Link></li>
+              <li><Link href="/expertises" className="hover:text-primary transition-colors">{t('candidate_5')}</Link></li>
             </ul>
           </div>
 
