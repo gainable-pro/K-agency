@@ -138,13 +138,13 @@ def map_image(title, category):
     elif any(k in title_lower for k in ["talent", "fidéliser", "fidélisation", "rétention", "turnover", "démission", "recrutement raté", "coaching", "ambition", "engagement"]):
         return "/images/talent_retention_morocco.png"
     elif any(k in title_lower for k in ["dirigeant", "exécutif", "executive", "c-level", "ceo", "management", "leadership", "manager", "gouvernance", "décider", "décision"]):
-        return "/images/executive_interview_marrakech.png"
+        return "/images/corporate_leadership_morocco.png"
     elif any(k in title_lower for k in ["luxe", "hotel", "hôtellerie", "palace", "événementiel", "tourisme"]):
         return "/images/hotel.png"
     elif any(k in title_lower for k in ["finance", "banque", "compta", "salaires", "salaire", "rémunération", "package", "grille", "wealth", "family office"]):
         return "/images/cfc.png"
-    elif any(k in title_lower for k in ["logistique", "transport", "supply", "achats", "achat", "tanger med", "usine", "production"]):
-        return "/images/logistics.png"
+    elif any(k in title_lower for k in ["logistique", "transport", "supply", "achats", "achat", "tanger med", "usine", "production", "industrie", "industriel"]):
+        return "/images/smart_industry_tanger.png"
     elif "marrakech" in title_lower:
         return "/images/marrakech.png"
     elif "tanger" in title_lower:
