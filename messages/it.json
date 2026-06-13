@@ -163,7 +163,16 @@
     "podcast_title2": "Il suono della leadership",
     "podcast_desc": "Ogni mese invitiamo un leader stimolante (Marocco o Africa) per decifrare il suo percorso, la sua visione del management e le sfide del suo settore.",
     "btn_listen": "Ascolta l'ultimo episodio",
-    "btn_spotify": "Guarda su Spotify"
+    "btn_spotify": "Guarda su Spotify",
+    "art_1_title": "Reclutamento Tech in Marocco: Rivelatore di Maturità Digitale",
+    "art_1_excerpt": "Il reclutamento IT non fallisce a causa del mercato, ma a causa dell'incertezza organizzativa. Come le aziende a Casablanca e Rabat adattano la loro governance per attrarre i migliori profili?",
+    "art_1_cat": "IT & Digital",
+    "art_2_title": "Fidelizzazione dei Dirigenti in Marocco: Perché Perdete i Vostri Migliori Talenti",
+    "art_2_excerpt": "Di fronte alla crescente concorrenza internazionale a Casablanca Finance City, trattenere i leader C-Level è una sfida importante. Analisi delle leve reali di fidelizzazione in Marocco.",
+    "art_2_cat": "Risorse Umane",
+    "art_3_title": "Reclutamento di Dirigenti in Marocco: Valutazione Comportamentale contro i CV Creati dall'IA",
+    "art_3_excerpt": "Da Marrakech a Tangeri, l'IA genera candidature perfette sulla carta. Come garantire la sicurezza del reclutamento esecutivo attraverso la presa di referenze e i soft-skills?",
+    "art_3_cat": "Caccia di teste"
   },
   "Implantations": {
     "header_tag": "Le Nostre Zone di Intervento",

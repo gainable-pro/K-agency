@@ -6,30 +6,30 @@ import { useTranslations } from 'next-intl';
 const ARTICLES = [
   {
     id: 1,
-    title: "Comment l'IA redéfinit l'acquisition de talents C-Level en 2026",
-    category: "Tendances RH",
+    titleKey: "art_1_title",
+    categoryKey: "art_1_cat",
     date: "12 Juin 2026",
     readTime: "5 min",
-    image: "/images/human_interview.png",
-    excerpt: "L'Intelligence Artificielle est capable de lisser un CV à la perfection. Comment les cabinets de chasse de têtes s'adaptent-ils pour évaluer le véritable leadership ?"
+    image: "/images/tech_recruitment_morocco.png",
+    excerptKey: "art_1_excerpt"
   },
   {
     id: 2,
-    title: "Le retour en force du marché de l'emploi à Casablanca Finance City",
-    category: "Marché Marocain",
+    titleKey: "art_2_title",
+    categoryKey: "art_2_cat",
     date: "05 Juin 2026",
     readTime: "4 min",
-    image: "/images/casaport.png",
-    excerpt: "Analyse des secteurs qui recrutent le plus de profils exécutifs cette année dans la capitale économique."
+    image: "/images/talent_retention_morocco.png",
+    excerptKey: "art_2_excerpt"
   },
   {
     id: 3,
-    title: "Management de transition : la nouvelle norme pour les entreprises en crise",
-    category: "Management",
+    titleKey: "art_3_title",
+    categoryKey: "art_3_cat",
     date: "28 Mai 2026",
     readTime: "7 min",
-    image: "/images/business_card_exchange.png",
-    excerpt: "Pourquoi de plus en plus d'entreprises marocaines font appel à des directeurs généraux de transition pour piloter des restructurations complexes."
+    image: "/images/executive_interview_marrakech.png",
+    excerptKey: "art_3_excerpt"
   }
 ];
 
@@ -60,7 +60,7 @@ export default function BlogPage() {
           <div className="relative h-[500px] w-full">
             <Image 
               src={ARTICLES[0].image} 
-              alt={ARTICLES[0].title}
+              alt={t(ARTICLES[0].titleKey)}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
@@ -70,10 +70,10 @@ export default function BlogPage() {
               {t('featured_tag')}
             </span>
             <h2 className="text-3xl md:text-4xl font-light text-white mb-4 max-w-3xl leading-tight group-hover:text-primary transition-colors">
-              {ARTICLES[0].title}
+              {t(ARTICLES[0].titleKey)}
             </h2>
             <p className="text-gray-300 font-light mb-6 max-w-2xl line-clamp-2">
-              {ARTICLES[0].excerpt}
+              {t(ARTICLES[0].excerptKey)}
             </p>
             <div className="flex items-center gap-6 text-sm text-gray-400 font-light">
               <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> {ARTICLES[0].date}</span>
@@ -92,20 +92,20 @@ export default function BlogPage() {
               <div className="relative h-48 w-full overflow-hidden">
                 <Image 
                   src={article.image} 
-                  alt={article.title}
+                  alt={t(article.titleKey)}
                   fill
                   className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <span className="text-primary text-xs font-semibold uppercase tracking-wider mb-3">
-                  {article.category}
+                  {t(article.categoryKey)}
                 </span>
                 <h4 className="text-xl font-medium text-foreground mb-3 group-hover:text-primary transition-colors line-clamp-2">
-                  {article.title}
+                  {t(article.titleKey)}
                 </h4>
                 <p className="text-muted-foreground text-sm font-light mb-6 flex-1 line-clamp-3">
-                  {article.excerpt}
+                  {t(article.excerptKey)}
                 </p>
                 <div className="flex items-center justify-between text-xs text-muted-foreground mt-auto pt-4 border-t border-border/50">
                   <span>{article.date}</span>
