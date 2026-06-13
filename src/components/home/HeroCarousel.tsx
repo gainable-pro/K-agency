@@ -2,18 +2,20 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const images = [
-  { src: '/images/cfc.png', alt: 'Casablanca Finance City', sector: 'Finance & Stratégie' },
-  { src: '/images/tanger_med.png', alt: 'Tanger Med - Logistique Internationale', sector: 'Logistique & Supply Chain' },
-  { src: '/images/developer.png', alt: 'Tech Hub Morocco - Développeurs', sector: 'IT & Digital' },
-  { src: '/images/marrakech.png', alt: 'Marrakech Business', sector: 'Immobilier & Luxe' },
-  { src: '/images/hotel_event.png', alt: 'Hôtellerie et Évènementiel', sector: 'Hôtellerie & Évènementiel' },
-  { src: '/images/artistic.png', alt: 'Recrutement Artistique', sector: 'Art & Création' },
-  { src: '/images/business.png', alt: 'Executive Business Meeting', sector: 'Direction Générale' }
+  { src: '/images/cfc.png', alt: 'Casablanca Finance City', key: 'finance' },
+  { src: '/images/tanger_med.png', alt: 'Tanger Med - Logistique Internationale', key: 'logistics' },
+  { src: '/images/developer.png', alt: 'Tech Hub Morocco - Développeurs', key: 'tech' },
+  { src: '/images/marrakech.png', alt: 'Marrakech Business', key: 'realestate' },
+  { src: '/images/hotel_event.png', alt: 'Hôtellerie et Évènementiel', key: 'hotel' },
+  { src: '/images/artistic.png', alt: 'Recrutement Artistique', key: 'art' },
+  { src: '/images/business.png', alt: 'Executive Business Meeting', key: 'executive' }
 ];
 
 export default function HeroCarousel() {
+  const t = useTranslations('Index.carousel');
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -56,7 +58,7 @@ export default function HeroCarousel() {
           ))}
         </div>
         <span className="text-xs tracking-widest text-primary/70 uppercase font-light">
-          {images[currentIndex].sector}
+          {t(images[currentIndex].key)}
         </span>
       </div>
     </div>

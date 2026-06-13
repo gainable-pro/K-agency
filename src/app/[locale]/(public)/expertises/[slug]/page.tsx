@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { generateAllCombinations, getCombinationFromSlug } from '@/data/seo-data';
 import { ShieldCheck, BrainCircuit, UserCheck, Crosshair, ChevronRight, CheckCircle2, AlertTriangle } from 'lucide-react';
 import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
 // 1. Tell Next.js to pre-render all 1000 URLs at build time
 export async function generateStaticParams() {
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: { params: { slug: string, loc
 
 // 3. The actual Page Component
 export default function ProgrammaticSeoPage({ params }: { params: { slug: string, locale: string } }) {
+  const t = useTranslations('SeoEngine');
   const combination = getCombinationFromSlug(params.slug);
   
   if (!combination) {
@@ -77,17 +79,17 @@ export default function ProgrammaticSeoPage({ params }: { params: { slug: string
       <div className="relative border-b border-border/40 py-24 overflow-hidden bg-secondary/30">
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <span className="text-primary font-medium uppercase tracking-[0.2em] text-sm mb-6 block">
-            Expertise Sectorielle & Locale
+            {t('header_tag')}
           </span>
           <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6 text-foreground max-w-4xl leading-tight">
-            Recrutement de <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">{role.name}</span> <br/>
-            dans le secteur <span className="text-foreground/90">{sector.name}</span> à {city.name}.
+            {t('hero_recruitment')} <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">{role.name}</span> <br/>
+            {t('hero_in_sector')} <span className="text-foreground/90">{sector.name}</span> {t('hero_at')} {city.name}.
           </h1>
           <p className="text-xl text-muted-foreground font-light leading-relaxed max-w-3xl mb-8">
-            Pour soutenir la dynamique de {city.name} ({city.focus.toLowerCase()}), attirer les meilleurs C-Levels est crucial. Mais comment s'assurer de leur réelle compétence ?
+            {t('hero_desc', { city: `${city.name} (${city.focus.toLowerCase()})` })}
           </p>
           <Link href="/contact" className="inline-flex items-center gap-3 bg-foreground text-background px-8 py-4 uppercase tracking-widest text-sm font-medium hover:bg-primary transition-colors duration-300 rounded-sm">
-            Démarrer une recherche <ChevronRight className="w-4 h-4" />
+            {t('hero_btn')} <ChevronRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
@@ -97,26 +99,26 @@ export default function ProgrammaticSeoPage({ params }: { params: { slug: string
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl font-light tracking-tight mb-8">
-              Le recrutement à l'ère de l'Intelligence Artificielle : <br/>
-              <span className="font-medium">Une illusion de perfection</span>
+              {t('problem_title1')} <br/>
+              <span className="font-medium">{t('problem_title2')}</span>
             </h2>
             
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed text-lg">
               <p>
-                Aujourd'hui, recruter un <strong className="text-foreground/80">{role.name}</strong> est devenu un véritable défi. Pourquoi ? Parce que l'Intelligence Artificielle générative a bouleversé les codes de la candidature.
+                {t('problem_p1')}
               </p>
               
               <div className="bg-destructive/10 border border-destructive/20 p-6 rounded-xl my-6">
                 <h3 className="text-destructive font-medium flex items-center gap-2 mb-3">
-                  <AlertTriangle className="w-5 h-5" /> L'Inconvénient des processus digitaux classiques
+                  <AlertTriangle className="w-5 h-5" /> {t('problem_alert_title')}
                 </h3>
                 <p className="text-sm">
-                  Des CVs parfaits générés en 5 secondes, des lettres de motivation lissées par ChatGPT, et même des assistants IA capables de réussir des tests cognitifs en ligne à la place du candidat. Les profils "parfaits sur le papier" sont devenus indétectables des véritables leaders. L'hyper-automatisation fausse votre jugement.
+                  {t('problem_alert_desc')}
                 </p>
               </div>
 
               <p>
-                Pour un poste stratégique comme celui de <strong className="text-foreground/80">{role.name}</strong>, vous ne pouvez pas confier l'avenir de votre entreprise à un algorithme de matching de mots-clés.
+                {t('problem_p2')}
               </p>
             </div>
           </div>
@@ -124,7 +126,7 @@ export default function ProgrammaticSeoPage({ params }: { params: { slug: string
           <div className="bg-card/40 backdrop-blur-md border border-border/50 p-10 rounded-xl shadow-xl shadow-black/20">
             <h3 className="text-2xl font-light mb-8 text-foreground flex items-center gap-3">
               <ShieldCheck className="w-6 h-6 text-primary" />
-              L'Avantage K-Agency :<br/>Le retour au "Real Human"
+              {t('solution_title1')}<br/>{t('solution_title2')}
             </h3>
             
             <ul className="space-y-6">
@@ -133,8 +135,8 @@ export default function ProgrammaticSeoPage({ params }: { params: { slug: string
                   <UserCheck className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-foreground font-medium mb-1">Intelligence Émotionnelle</h4>
-                  <p className="text-sm text-muted-foreground font-light">Notre évaluation ne se base pas sur un CV, mais sur une rencontre en profondeur. Nous testons le leadership, la gestion du stress et le "fit" culturel.</p>
+                  <h4 className="text-foreground font-medium mb-1">{t('sol1_title')}</h4>
+                  <p className="text-sm text-muted-foreground font-light">{t('sol1_desc')}</p>
                 </div>
               </li>
               <li className="flex items-start">
@@ -142,8 +144,8 @@ export default function ProgrammaticSeoPage({ params }: { params: { slug: string
                   <BrainCircuit className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-foreground font-medium mb-1">Mises en situation réelles</h4>
-                  <p className="text-sm text-muted-foreground font-light">L'IA ne peut pas simuler l'expérience terrain. Nous challengons les candidats sur des Business Cases complexes liés au marché de {city.name}.</p>
+                  <h4 className="text-foreground font-medium mb-1">{t('sol2_title')}</h4>
+                  <p className="text-sm text-muted-foreground font-light">{t('sol2_desc')}</p>
                 </div>
               </li>
               <li className="flex items-start">
@@ -151,8 +153,8 @@ export default function ProgrammaticSeoPage({ params }: { params: { slug: string
                   <Crosshair className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-foreground font-medium mb-1">Back-channeling (Prise de références)</h4>
-                  <p className="text-sm text-muted-foreground font-light">Une enquête de réputation approfondie auprès d'anciens N+1 et N-1, impossible à falsifier par un candidat.</p>
+                  <h4 className="text-foreground font-medium mb-1">{t('sol3_title')}</h4>
+                  <p className="text-sm text-muted-foreground font-light">{t('sol3_desc')}</p>
                 </div>
               </li>
             </ul>
@@ -163,12 +165,12 @@ export default function ProgrammaticSeoPage({ params }: { params: { slug: string
       {/* CTA Section */}
       <div className="bg-primary/5 border-t border-b border-primary/10 py-16 text-center">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-light mb-6">Confiez-nous la recherche de votre {role.name} à {city.name}</h2>
+          <h2 className="text-3xl font-light mb-6">{t('cta_title')} {city.name}</h2>
           <p className="text-muted-foreground font-light mb-8 text-lg">
-            Nous avons le réseau et la méthodologie pour approcher les profils passifs les plus performants dans le domaine : {sector.name}.
+            {t('cta_desc')} {sector.name}.
           </p>
           <Link href="/contact" className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-medium hover:bg-primary/90 transition-colors rounded-sm shadow-lg shadow-primary/20">
-            Discuter de votre besoin <ChevronRight className="w-4 h-4" />
+            {t('cta_btn')} <ChevronRight className="w-4 h-4" />
           </Link>
         </div>
       </div>

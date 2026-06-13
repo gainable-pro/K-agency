@@ -10,12 +10,12 @@ export default function RecrutementPage() {
       {/* Hero Section */}
       <div className="relative border-b border-border/40 py-24 overflow-hidden bg-secondary/30">
         <div className="container relative z-20 mx-auto px-6 max-w-7xl text-center">
-          <span className="text-primary font-medium uppercase tracking-[0.2em] text-sm mb-6 block">Le Capital Humain avant tout</span>
+          <span className="text-primary font-medium uppercase tracking-[0.2em] text-sm mb-6 block">{t('tag')}</span>
           <h1 className="text-4xl md:text-6xl font-light tracking-tight mb-6 text-foreground">
-            Des talents pour <span className="font-medium text-primary">façonner demain</span>
+            {t('title')}
           </h1>
           <p className="text-muted-foreground text-xl max-w-3xl mx-auto font-light leading-relaxed">
-            Chez K-Agency, nous ne recrutons pas que des CV, nous recrutons des personnalités, des ambitions et des histoires. Notre mission est de créer des rencontres professionnelles durables et épanouissantes, fondées sur la confiance et la transparence.
+            {t('intro')}
           </p>
         </div>
       </div>
@@ -24,17 +24,17 @@ export default function RecrutementPage() {
       <div className="container mx-auto px-6 max-w-7xl py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl font-light tracking-tight mb-6">L'Humain au Centre de Notre Démarche</h2>
+            <h2 className="text-3xl font-light tracking-tight mb-6">{t('philo_title')}</h2>
             <div className="h-px w-24 bg-primary mb-8"></div>
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed text-lg">
               <p>
-                Dans un monde professionnel en perpétuelle mutation, la véritable valeur ajoutée d'une entreprise réside dans ses collaborateurs. Nous croyons profondément que le succès d'un recrutement ne se mesure pas seulement à l'adéquation technique, mais surtout au "fit" culturel et humain.
+                {t('philo_p1')}
               </p>
               <p>
-                Nos consultants, experts dans leurs secteurs respectifs, prennent le temps de comprendre l'ADN de votre entreprise : vos valeurs, votre vision, et l'environnement de travail que vous offrez. 
+                {t('philo_p2')}
               </p>
               <p>
-                Du côté des candidats, nous agissons comme de véritables coachs de carrière. Nous écoutons leurs aspirations, évaluons leurs soft skills avec bienveillance, et les orientons vers des opportunités où ils pourront s'épanouir pleinement et donner le meilleur d'eux-mêmes.
+                {t('philo_p3')}
               </p>
             </div>
             
@@ -42,15 +42,15 @@ export default function RecrutementPage() {
               <div className="flex items-start gap-4">
                 <HeartHandshake className="text-primary w-8 h-8 shrink-0" strokeWidth={1.5} />
                 <div>
-                  <h4 className="font-medium text-foreground mb-1">Empathie</h4>
-                  <p className="text-sm text-muted-foreground">Comprendre avant de proposer.</p>
+                  <h4 className="font-medium text-foreground mb-1">{t('philo_v1_title')}</h4>
+                  <p className="text-sm text-muted-foreground">{t('philo_v1_desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Lightbulb className="text-primary w-8 h-8 shrink-0" strokeWidth={1.5} />
                 <div>
-                  <h4 className="font-medium text-foreground mb-1">Transparence</h4>
-                  <p className="text-sm text-muted-foreground">Une communication claire et honnête.</p>
+                  <h4 className="font-medium text-foreground mb-1">{t('philo_v2_title')}</h4>
+                  <p className="text-sm text-muted-foreground">{t('philo_v2_desc')}</p>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ export default function RecrutementPage() {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-light tracking-tight">{t('approach_title')}</h2>
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">Une méthode éprouvée qui allie rigueur analytique et intelligence émotionnelle.</p>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">{t('approach_subtitle')}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -83,7 +83,7 @@ export default function RecrutementPage() {
               </div>
               <h3 className="text-xl font-medium mb-4">{t('approach_1_title')}</h3>
               <p className="text-muted-foreground font-light leading-relaxed">
-                Immersion dans vos locaux, entretiens avec les managers opérationnels pour capter l'essence du besoin. Nous co-rédigeons le profil idéal en intégrant vos enjeux stratégiques.
+                {t('approach_1_desc')}
               </p>
             </div>
             {/* Step 2 */}
@@ -93,7 +93,7 @@ export default function RecrutementPage() {
               </div>
               <h3 className="text-xl font-medium mb-4">{t('approach_2_title')}</h3>
               <p className="text-muted-foreground font-light leading-relaxed">
-                Chasse ciblée, activation de notre vivier exclusif et diffusion multicanale. Nous contactons les candidats potentiels avec des messages personnalisés et valorisants.
+                {t('approach_2_desc')}
               </p>
             </div>
             {/* Step 3 */}
@@ -103,7 +103,7 @@ export default function RecrutementPage() {
               </div>
               <h3 className="text-xl font-medium mb-4">{t('approach_3_title')}</h3>
               <p className="text-muted-foreground font-light leading-relaxed">
-                Au-delà des compétences techniques, nous évaluons la personnalité, le potentiel de leadership et la capacité d'adaptation via des entretiens approfondis et des tests psychométriques reconnus.
+                {t('approach_3_desc')}
               </p>
             </div>
           </div>

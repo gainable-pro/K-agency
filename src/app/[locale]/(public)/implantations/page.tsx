@@ -69,6 +69,39 @@ const cities = [
 export default function ImplantationsPage() {
   const t = useTranslations('Implantations');
 
+  const cityTranslations: Record<string, { subtitle: string; description: string; sectors: string[] }> = {
+    casablanca: {
+      subtitle: t('cities.casablanca.subtitle'),
+      description: t('cities.casablanca.desc'),
+      sectors: t.raw('cities.casablanca.sectors')
+    },
+    tanger: {
+      subtitle: t('cities.tanger.subtitle'),
+      description: t('cities.tanger.desc'),
+      sectors: t.raw('cities.tanger.sectors')
+    },
+    marrakech: {
+      subtitle: t('cities.marrakech.subtitle'),
+      description: t('cities.marrakech.desc'),
+      sectors: t.raw('cities.marrakech.sectors')
+    },
+    'fes-meknes': {
+      subtitle: t('cities.fes-meknes.subtitle'),
+      description: t('cities.fes-meknes.desc'),
+      sectors: t.raw('cities.fes-meknes.sectors')
+    },
+    rabat: {
+      subtitle: t('cities.rabat.subtitle'),
+      description: t('cities.rabat.desc'),
+      sectors: t.raw('cities.rabat.sectors')
+    },
+    agadir: {
+      subtitle: t('cities.agadir.subtitle'),
+      description: t('cities.agadir.desc'),
+      sectors: t.raw('cities.agadir.sectors')
+    }
+  };
+
   return (
     <div className="bg-background min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-6 max-w-7xl">
@@ -86,6 +119,7 @@ export default function ImplantationsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cities.map((city) => {
             const Icon = city.icon;
+            const trans = cityTranslations[city.id];
             return (
               <div key={city.id} className={`bg-card/40 backdrop-blur-sm border ${city.color} rounded-2xl overflow-hidden hover:border-primary/50 transition-colors group flex flex-col`}>
                 <div className="relative h-48 w-full overflow-hidden">
@@ -103,15 +137,15 @@ export default function ImplantationsPage() {
                 
                 <div className="p-8 flex flex-col flex-1">
                   <span className="text-primary text-xs font-semibold uppercase tracking-wider mb-2">{city.id.toUpperCase()}</span>
-                  <h3 className="text-xl font-medium text-foreground mb-4">{city.subtitle}</h3>
+                  <h3 className="text-xl font-medium text-foreground mb-4">{trans.subtitle}</h3>
                   <p className="text-sm font-light text-muted-foreground mb-8 flex-1 leading-relaxed">
-                    {city.description}
+                    {trans.description}
                   </p>
                   
                   <div>
                     <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground mb-3">{t('sectors_title')}</h4>
                     <div className="flex flex-wrap gap-2">
-                      {city.sectors.map((sector, i) => (
+                      {trans.sectors.map((sector, i) => (
                         <span key={i} className="text-xs bg-foreground/5 text-foreground/80 px-3 py-1 rounded-full border border-border/50">
                           {sector}
                         </span>

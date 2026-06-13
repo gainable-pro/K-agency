@@ -1,30 +1,30 @@
 import { useTranslations } from 'next-intl';
 
-const steps = [
-  {
-    number: '01',
-    title: 'Analyse & Stratégie',
-    description: 'Immersion totale dans votre culture d\'entreprise. Nous définissons ensemble le profil idéal, les compétences clés et la stratégie de sourcing ciblée (Maroc, Europe, Afrique).'
-  },
-  {
-    number: '02',
-    title: 'Chasse & Sourcing',
-    description: 'Approche directe des meilleurs talents. Nous activons notre réseau exclusif et nos outils de chasse de têtes pour identifier les profils rares et passifs.'
-  },
-  {
-    number: '03',
-    title: 'Évaluation Premium',
-    description: 'Entretiens approfondis, tests de personnalité et contrôles de références. Nous ne vous présentons que la shortlist des candidats parfaitement alignés.'
-  },
-  {
-    number: '04',
-    title: 'Intégration & Suivi',
-    description: 'Accompagnement dans la négociation et suivi rigoureux pendant toute la période d\'essai pour garantir un recrutement pérenne et réussi.'
-  }
-];
-
 export default function RecruitmentProcess() {
-  const t = useTranslations('Index'); // If needed later
+  const t = useTranslations('Index.process');
+
+  const steps = [
+    {
+      number: '01',
+      title: t('step1_title'),
+      description: t('step1_desc')
+    },
+    {
+      number: '02',
+      title: t('step2_title'),
+      description: t('step2_desc')
+    },
+    {
+      number: '03',
+      title: t('step3_title'),
+      description: t('step3_desc')
+    },
+    {
+      number: '04',
+      title: t('step4_title'),
+      description: t('step4_desc')
+    }
+  ];
 
   return (
     <section className="py-24 md:py-32 bg-background relative overflow-hidden">
@@ -44,14 +44,14 @@ export default function RecruitmentProcess() {
       <div className="container relative z-10 px-6 mx-auto max-w-7xl">
         <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="max-w-2xl">
-            <span className="text-primary font-light uppercase tracking-[0.2em] text-sm mb-4 block">Notre Expertise</span>
+            <span className="text-primary font-light uppercase tracking-[0.2em] text-sm mb-4 block">{t('tag')}</span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight tracking-tight text-foreground">
-              L'art de dénicher <br />
-              <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">les profils rares.</span>
+              {t('title_1')} <br />
+              <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">{t('title_2')}</span>
             </h2>
           </div>
           <p className="text-muted-foreground font-light max-w-md text-lg">
-            Un processus sur-mesure, rigoureux et confidentiel, garantissant l'adéquation parfaite entre vos ambitions et le talent identifié.
+            {t('desc')}
           </p>
         </div>
 

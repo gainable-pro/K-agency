@@ -1,11 +1,13 @@
-'use client';
+"use client";
 
 import { MapPin, Phone, Mail, Building2, Globe2 } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { submitContact } from '@/app/actions/contact';
 
 export default function ContactPage() {
+  const t = useTranslations('Contact');
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -35,12 +37,12 @@ export default function ContactPage() {
           
           {/* Info Side */}
           <div>
-            <span className="text-primary font-light uppercase tracking-[0.2em] text-sm mb-6 block">Lead Entreprise</span>
+            <span className="text-primary font-light uppercase tracking-[0.2em] text-sm mb-6 block">{t('tag')}</span>
             <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6 text-foreground">
-              Confiez-nous votre <span className="font-medium">prochain recrutement</span>
+              {t('title')}
             </h1>
             <p className="text-muted-foreground font-light leading-relaxed mb-12 text-lg">
-              Nos associés experts sectoriels sont à votre disposition pour analyser vos besoins stratégiques et définir ensemble la meilleure approche d'acquisition de talents.
+              {t('subtitle')}
             </p>
 
             <div className="space-y-8">
@@ -50,9 +52,9 @@ export default function ContactPage() {
                   <Building2 className="text-primary w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-foreground mb-1">Siège Afrique (Casablanca)</h3>
-                  <p className="text-muted-foreground font-light text-sm mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2" /> Tour CFC, Casablanca Finance City, Maroc</p>
-                  <p className="text-muted-foreground font-light text-sm flex items-center"><Phone className="w-4 h-4 mr-2" /> +212 5 00 00 00 00</p>
+                  <h3 className="text-lg font-medium text-foreground mb-1">{t('hq_title')}</h3>
+                  <p className="text-muted-foreground font-light text-sm mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2" /> {t('hq_address')}</p>
+                  <p className="text-muted-foreground font-light text-sm flex items-center"><Phone className="w-4 h-4 mr-2" /> +212 5 22 00 00 00</p>
                 </div>
               </div>
 
@@ -62,8 +64,8 @@ export default function ContactPage() {
                   <Globe2 className="text-primary w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-foreground mb-1">Bureau Europe (Genève & Paris)</h3>
-                  <p className="text-muted-foreground font-light text-sm mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2" /> Représentation Internationale</p>
+                  <h3 className="text-lg font-medium text-foreground mb-1">{t('europe_title')}</h3>
+                  <p className="text-muted-foreground font-light text-sm mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2" /> {t('europe_address')}</p>
                   <p className="text-muted-foreground font-light text-sm flex items-center"><Mail className="w-4 h-4 mr-2" /> executive@k-agency.com</p>
                 </div>
               </div>
@@ -81,70 +83,70 @@ export default function ContactPage() {
 
           {/* Form Side */}
           <div className="bg-card/40 backdrop-blur-md border border-border/50 p-8 md:p-12 shadow-xl shadow-black/10 rounded-xl">
-            <h3 className="text-2xl font-light mb-8 text-foreground">Discutons de vos enjeux</h3>
+            <h3 className="text-2xl font-light mb-8 text-foreground">{t('form_title')}</h3>
             
             {success && (
               <div className="bg-green-500/10 border border-green-500/20 text-green-500 px-4 py-4 rounded-md mb-6">
-                Merci ! Votre demande a été envoyée avec succès. Un associé vous contactera dans les plus brefs délais.
+                {t('form_success')}
               </div>
             )}
 
             {error && (
               <div className="bg-destructive/10 border border-destructive/20 text-destructive px-4 py-4 rounded-md mb-6">
-                Une erreur est survenue: {error}
+                {t('form_error')} {error}
               </div>
             )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground/80">Nom de l'entreprise *</label>
+                <label className="text-sm font-medium text-foreground/80">{t('form_company')} *</label>
                 <input name="company_name" type="text" className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm" required />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground/80">Contact (Prénom & Nom) *</label>
+                  <label className="text-sm font-medium text-foreground/80">{t('form_contact')} *</label>
                   <input name="contact_name" type="text" className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm" required />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground/80">Fonction</label>
-                  <input name="role" type="text" className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm" placeholder="ex: DRH, CEO..." />
+                  <label className="text-sm font-medium text-foreground/80">{t('form_function')}</label>
+                  <input name="role" type="text" className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm" placeholder={t('form_function_placeholder')} />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground/80">Email professionnel *</label>
+                  <label className="text-sm font-medium text-foreground/80">{t('form_email')} *</label>
                   <input name="email" type="email" className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm" required />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground/80">Téléphone *</label>
+                  <label className="text-sm font-medium text-foreground/80">{t('form_phone')} *</label>
                   <input name="phone" type="tel" className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm" required />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground/80">Secteur d'activité</label>
+                <label className="text-sm font-medium text-foreground/80">{t('form_sector')}</label>
                 <select name="sector" className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm appearance-none cursor-pointer">
-                  <option value="">Sélectionnez un secteur...</option>
-                  <option value="finance">Banque, Finance & Assurance</option>
-                  <option value="it">IT & Digital</option>
-                  <option value="logistics">Logistique & Supply Chain</option>
-                  <option value="industry">Industrie & Ingénierie</option>
-                  <option value="other">Autre</option>
+                  <option value="">{t('form_sector_select')}</option>
+                  <option value="finance">{t('form_sector_finance')}</option>
+                  <option value="it">{t('form_sector_tech')}</option>
+                  <option value="logistics">{t('form_sector_logistics')}</option>
+                  <option value="industry">{t('form_sector_industry')}</option>
+                  <option value="other">{t('form_sector_other')}</option>
                 </select>
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground/80">Votre besoin de recrutement</label>
-                <textarea name="message" rows={5} className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm" placeholder="Décrivez brièvement le(s) poste(s) à pourvoir..." required></textarea>
+                <label className="text-sm font-medium text-foreground/80">{t('form_need')}</label>
+                <textarea name="message" rows={5} className="w-full bg-background/50 border border-border/50 px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-sm" placeholder={t('form_need_placeholder')} required></textarea>
               </div>
 
               <button type="submit" disabled={loading} className="w-full bg-primary text-primary-foreground py-4 uppercase tracking-widest text-sm font-medium hover:bg-primary/90 transition-colors duration-300 rounded-sm disabled:opacity-50">
-                {loading ? 'Envoi en cours...' : 'Envoyer la demande'}
+                {loading ? t('form_sending') : t('form_submit')}
               </button>
               <p className="text-xs text-muted-foreground text-center mt-4">
-                Vos données sont traitées de manière strictement confidentielle.
+                {t('form_privacy')}
               </p>
             </form>
           </div>

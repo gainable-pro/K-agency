@@ -37,7 +37,7 @@ export default function DeposerCVPage() {
           
           {/* Info Side */}
           <div>
-            <span className="text-primary font-light uppercase tracking-[0.2em] text-sm mb-6 block">Candidature Spontanée</span>
+            <span className="text-primary font-light uppercase tracking-[0.2em] text-sm mb-6 block">{t('tag')}</span>
             <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6 text-foreground">
               {t('title')}
             </h1>
@@ -63,13 +63,13 @@ export default function DeposerCVPage() {
             
             {success && (
               <div className="bg-green-500/10 border border-green-500/20 text-green-500 px-4 py-4 rounded-md mb-6">
-                Votre candidature a été envoyée avec succès. Notre équipe va l'examiner rapidement.
+                {t('success')}
               </div>
             )}
 
             {error && (
               <div className="bg-destructive/10 border border-destructive/20 text-destructive px-4 py-4 rounded-md mb-6">
-                Une erreur est survenue: {error}
+                {t('error')} {error}
               </div>
             )}
 
@@ -107,8 +107,8 @@ export default function DeposerCVPage() {
                   className="border-2 border-dashed border-border/50 bg-background/50 hover:border-primary/50 transition-colors px-6 py-10 text-center cursor-pointer rounded-sm"
                   onClick={() => fileInputRef.current?.click()}
                 >
-                  <p className="text-sm text-muted-foreground">Cliquez ici pour sélectionner votre CV</p>
-                  <p className="text-xs text-muted-foreground/60 mt-2">PDF uniquement, max 5Mo</p>
+                  <p className="text-sm text-muted-foreground">{t('form_cv_click')}</p>
+                  <p className="text-xs text-muted-foreground/60 mt-2">{t('form_cv_help')}</p>
                   <input ref={fileInputRef} name="cv" type="file" accept=".pdf" className="hidden" />
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function DeposerCVPage() {
               </div>
 
               <button type="submit" disabled={loading} className="w-full bg-primary text-primary-foreground py-4 uppercase tracking-widest text-sm font-medium hover:bg-primary/90 transition-colors duration-300 rounded-sm disabled:opacity-50">
-                {loading ? 'Envoi...' : t('form_submit')}
+                {loading ? t('form_sending') : t('form_submit')}
               </button>
             </form>
           </div>
